@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  echo:
     machine:
       enabled: true
       image: circleci/classic:201708-01
@@ -20,4 +20,4 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
+      - echo
