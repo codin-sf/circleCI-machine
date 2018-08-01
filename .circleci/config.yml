@@ -1,8 +1,4 @@
-version: 2
 jobs:
   build:
     machine:
-      - image: circleci/classic:latest
-    steps:
-      - checkout
-      - run: echo "hello world machine"
+      image: circleci/classic:201708-01
