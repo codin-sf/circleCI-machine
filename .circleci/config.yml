@@ -5,10 +5,6 @@ jobs:
       enabled: true
       image: circleci/classic:201708-01
     
-    branches:
-      ignore:
-        - ignorebranchnamehere
-
     steps:
       - checkout
       - setup_remote_docker
