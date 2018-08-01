@@ -1,8 +1,16 @@
-version:2
+version: 2
 jobs:
   build:
     machine:
+      enabled: true
       image: circleci/classic:201708-01
+    
+    branches:
+      ignore:
+        - ignorebranchnamehere
+
     steps:
       - checkout
-      - run: echo "hello world"
+
+      - run:
+          echo "hello world"
