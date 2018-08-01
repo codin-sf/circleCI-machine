@@ -1,10 +1,6 @@
 version: 2
 jobs:
   build:
-    machine:
-      enabled: true
-      image: circleci/classic:201708-01
-    
     steps:
       - checkout
       - setup_remote_docker
